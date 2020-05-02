@@ -13,7 +13,7 @@ clrd.shape
 ```
 
 **equivalent code in GraphQL**
-```javascript
+```graphql
 mutation {
   loadDataset(name: "clrd"){
     triangle{
@@ -25,14 +25,10 @@ mutation {
     whereIndex:{key: "LOB", operator: EQ, value:"wkcomp"},
     columns:["CumPaidLoss", "EarnedPremNet"],
     whereOrigin: {operator: GE, value: "1995"}) {
-    	triangle {
-    		shape
-  		}
+    	triangle {shape}
   }
-	dropNa(name: "clrd", assignTo: "clrd"){
-    triangle{
-      shape
-    }
+  dropNa(name: "clrd", assignTo: "clrd"){
+    triangle{shape}
   }
 }
 ```
