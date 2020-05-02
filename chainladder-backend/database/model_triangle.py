@@ -3,7 +3,7 @@ from sqlalchemy import Column, ForeignKey, Integer, String, Boolean
 
 
 class ModelTriangle(Base):
-    """Triangle model."""
+    """Triangle model in the database."""
 
     __tablename__ = 'triangle'
 
