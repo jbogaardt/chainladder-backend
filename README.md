@@ -13,7 +13,7 @@ clrd.shape
 ```
 
 **equivalent code in GraphQL**
-```json
+```javascript
 mutation {
   loadDataset(name: "clrd"){
     triangle{
