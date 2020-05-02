@@ -16,9 +16,7 @@ clrd.shape
 ```graphql
 mutation {
   loadDataset(name: "clrd"){
-    triangle{
-      shape
-    }
+    triangle{shape}
   }
   loc(
     name: "clrd", assignTo: "clrd"
